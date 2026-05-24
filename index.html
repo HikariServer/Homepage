@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メンテナンス中｜光鯖公式</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@400;600;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --bg: #fefdf1;
+      --text: #333333;
+      --primary: #FFA500;
+      --glass-bg: rgba(255, 255, 255, 0.7);
+      --glass-border: rgba(255, 255, 255, 0.5);
+    }
+    body {
+      margin: 0;
+      font-family: 'M PLUS 2', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 1rem;
+    }
+    .container {
+      max-width: 600px;
+      background: var(--glass-bg);
+      padding: 3rem 2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--glass-border);
+      backdrop-filter: blur(10px);
+    }
+    h1 {
+      font-family: 'Outfit', 'M PLUS 2', sans-serif;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+    }
+    p {
+      line-height: 1.8;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      width: 100%;
+      max-width: 300px;
+      justify-content: center;
+    }
+    .btn-mail {
+      background: #fff;
+      color: var(--text);
+      border: 1px solid #ddd;
+    }
+    .btn-mail:hover {
+      background: #f5f5f5;
+      transform: translateY(-2px);
+    }
+    .btn-discord {
+      background: #5865F2;
+      color: white;
+      border: none;
+    }
+    .btn-discord:hover {
+      background: #4752C4;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fa-solid fa-server"></i> 503</h1>
+    <p>
+      現在、サーバーにアクセスできない状況になっています。<br>
+      もし、これが続くようであれば、以下の方法で運営へお問い合わせをお願いします。
+    </p>
+    <div class="contact-links">
+      <a href="mailto:server@hikariserver.com" class="btn btn-mail">
+        <i class="fa-regular fa-envelope"></i> server@hikariserver.com
+      </a>
+      <a href="https://discord.hikariserver.com" class="btn btn-discord" target="_blank" rel="noopener">
+        <i class="fa-brands fa-discord"></i> Discordに参加
+      </a>
+    </div>
+  </div>
+</body>
+</html>
