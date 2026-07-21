@@ -11,82 +11,110 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     :root {
-      --bg: #fefdf1;
+      /* 画像に合わせた温かみのある背景色 */
+      --bg: #fdfaf0; 
       --text: #333333;
       --primary: #FFA500;
-      --glass-bg: rgba(255, 255, 255, 0.7);
-      --glass-border: rgba(255, 255, 255, 0.5);
     }
     body {
       margin: 0;
       font-family: 'M PLUS 2', sans-serif;
       background-color: var(--bg);
       color: var(--text);
+      /* 画面の中央に配置するための設定 */
       display: flex;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
       text-align: center;
       padding: 1rem;
+      box-sizing: border-box;
     }
     .container {
-      max-width: 600px;
-      background: var(--glass-bg);
-      padding: 3rem 2rem;
-      border-radius: 16px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
-      border: 1px solid var(--glass-border);
-      backdrop-filter: blur(10px);
+      width: 100%;
+      max-width: 700px; /* 画像に合わせてコンテナ幅を少し広めに設定 */
+      background: #ffffff; /* 白背景 */
+      padding: 4rem 3rem; /* 上下の余白を多めに */
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03); /* 自然で柔らかい影 */
+      box-sizing: border-box;
     }
     h1 {
       font-family: 'Outfit', 'M PLUS 2', sans-serif;
       font-weight: 800;
       color: var(--primary);
-      margin-bottom: 0.5rem;
-      font-size: 2.5rem;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      font-size: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
     }
     p {
       line-height: 1.8;
       font-size: 1.1rem;
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
+      color: #4a4a4a;
     }
     .contact-links {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: 1.2rem;
       align-items: center;
     }
     .btn {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 0.5rem;
       text-decoration: none;
-      padding: 1rem 2rem;
+      padding: 1.2rem 2rem;
       border-radius: 50px;
       font-weight: 600;
+      font-size: 1.05rem;
       transition: all 0.3s ease;
       width: 100%;
-      max-width: 300px;
-      justify-content: center;
+      max-width: 400px; /* ボタンの幅を画像に合わせて広めに */
+      box-sizing: border-box;
     }
     .btn-mail {
-      background: #fff;
+      background: #ffffff;
       color: var(--text);
-      border: 1px solid #ddd;
+      border: 1px solid #dcdcdc;
     }
     .btn-mail:hover {
-      background: #f5f5f5;
+      background: #f8f8f8;
       transform: translateY(-2px);
     }
     .btn-discord {
       background: #5865F2;
-      color: white;
+      color: #ffffff;
       border: none;
     }
     .btn-discord:hover {
       background: #4752C4;
       transform: translateY(-2px);
       box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4);
+    }
+
+    /* レスポンシブ対応：画面幅が600px以下（スマホなど）の場合のスタイル */
+    @media (max-width: 600px) {
+      .container {
+        padding: 2.5rem 1.5rem;
+        border-radius: 16px;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+      }
+      .btn {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
